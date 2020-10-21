@@ -1,2 +1,2 @@
 # hamburger-menu
-hamburger menu buttons
+a hamburger menu buttons for most sidebar 
