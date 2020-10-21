@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background: #121212;
+  }
+  
+  #hamburger-menu {
+    width: 24px;
+    height: 18px;
+  
+    position: relative;
+    cursor: pointer;
+  }
+  
+  #hamburger-menu span {
+    position: absolute;
+    left: 0;
+  
+    height: 2px;
+    width: 100%;
+  
+    opacity: 1;
+    background: #fff;
+    border-radius: 2px;
+  
+    pointer-events: none;
+  
+    transform: rotate(0deg);
+    transition: 0.2s ease;
+  }
+  
+  #hamburger-menu span:nth-child(1) {
+    top: 0px;
+  }
+  
+  #hamburger-menu span:nth-child(2),
+  #hamburger-menu span:nth-child(3) {
+    top: 50%;
+  }
+  
+  #hamburger-menu span:nth-child(4) {
+    top: 100%;
+  }
+  
+  #hamburger-menu.open span:nth-child(1),
+  #hamburger-menu.open span:nth-child(4) {
+    top: 50%;
+    width: 0%;
+    left: 50%;
+  }
+  
+  #hamburger-menu.open span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  
+  #hamburger-menu.open span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  
+  
